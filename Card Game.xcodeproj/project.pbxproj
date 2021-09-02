@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1A9E47026E12771006CD295 /* shuffling-cards-5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1A9E46F26E12771006CD295 /* shuffling-cards-5.mp3 */; };
+		B1A9E47226E12CE5006CD295 /* soundcard.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1A9E47126E12CE5006CD295 /* soundcard.wav */; };
 		B1DF2CC526DFBE2900F9D179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DF2CC426DFBE2900F9D179 /* AppDelegate.swift */; };
 		B1DF2CC726DFBE2900F9D179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DF2CC626DFBE2900F9D179 /* SceneDelegate.swift */; };
 		B1DF2CC926DFBE2900F9D179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DF2CC826DFBE2900F9D179 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1A9E46F26E12771006CD295 /* shuffling-cards-5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "shuffling-cards-5.mp3"; sourceTree = "<group>"; };
+		B1A9E47126E12CE5006CD295 /* soundcard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = soundcard.wav; sourceTree = "<group>"; };
 		B1DF2CC126DFBE2900F9D179 /* Card Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Card Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DF2CC426DFBE2900F9D179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1DF2CC626DFBE2900F9D179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1A9E46E26E11D6E006CD295 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				B1A9E47126E12CE5006CD295 /* soundcard.wav */,
+				B1A9E46F26E12771006CD295 /* shuffling-cards-5.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		B1DF2CB826DFBE2900F9D179 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +69,7 @@
 		B1DF2CC326DFBE2900F9D179 /* Card Game */ = {
 			isa = PBXGroup;
 			children = (
+				B1A9E46E26E11D6E006CD295 /* Sound */,
 				B1DF2CC426DFBE2900F9D179 /* AppDelegate.swift */,
 				B1DF2CC626DFBE2900F9D179 /* SceneDelegate.swift */,
 				B1DF2CC826DFBE2900F9D179 /* ViewController.swift */,
@@ -124,7 +138,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A9E47226E12CE5006CD295 /* soundcard.wav in Resources */,
 				B1DF2CD126DFBE2A00F9D179 /* LaunchScreen.storyboard in Resources */,
+				B1A9E47026E12771006CD295 /* shuffling-cards-5.mp3 in Resources */,
 				B1DF2CCE26DFBE2A00F9D179 /* Assets.xcassets in Resources */,
 				B1DF2CCC26DFBE2900F9D179 /* Main.storyboard in Resources */,
 			);
