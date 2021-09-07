@@ -16,36 +16,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="lAQ-jM-4GV">
-                                <rect key="frame" x="-6" y="0.0" width="426" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="lAQ-jM-4GV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card10" translatesAutoresizingMaskIntoConstraints="NO" id="xCH-zy-DMK">
+                                <rect key="frame" x="12" y="302" width="190.5" height="247.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card2" translatesAutoresizingMaskIntoConstraints="NO" id="V5m-ex-sZb">
-                                <rect key="frame" x="12" y="286" width="190.5" height="247.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card2" translatesAutoresizingMaskIntoConstraints="NO" id="2a5-Lb-K4Y">
+                                <rect key="frame" x="210" y="302" width="190.5" height="247.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card13" translatesAutoresizingMaskIntoConstraints="NO" id="1ZH-b8-Cl3">
-                                <rect key="frame" x="210" y="286" width="190.5" height="247.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNR-jJ-ZNU">
+                                <rect key="frame" x="131" y="671" width="156" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfC-30-9lt">
-                                <rect key="frame" x="160" y="650" width="94" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <state key="normal" title="Roll">
+                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                <state key="normal" title="ROLL">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7zM-w5-BGb"/>
+                                    <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="etD-fY-Ggz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lAQ-jM-4GV" secondAttribute="bottom" id="c2M-6F-rRc"/>
+                            <constraint firstItem="lAQ-jM-4GV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jTO-ge-uYQ"/>
+                            <constraint firstItem="lAQ-jM-4GV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pMs-XI-FTf"/>
+                            <constraint firstAttribute="trailing" secondItem="lAQ-jM-4GV" secondAttribute="trailing" id="tmE-Oo-QtT"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="cardImageViewOne" destination="V5m-ex-sZb" id="lvP-EO-nJZ"/>
-                        <outlet property="cardImageViewTwo" destination="1ZH-b8-Cl3" id="dea-Fw-Pjf"/>
+                        <outlet property="cardImageViewOne" destination="xCH-zy-DMK" id="WpT-jr-H8P"/>
+                        <outlet property="cardImageViewTwo" destination="2a5-Lb-K4Y" id="VxR-N6-RZS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -55,7 +60,7 @@
     </scenes>
     <resources>
         <image name="Background" width="414" height="896"/>
-        <image name="card13" width="120" height="170"/>
+        <image name="card10" width="120" height="170"/>
         <image name="card2" width="120" height="170"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
